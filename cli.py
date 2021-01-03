@@ -1,5 +1,5 @@
 import click
-from app_manager import AppManager
+from cli_app.app_manager import AppManager
 
 app_manager = AppManager()
 
@@ -27,7 +27,7 @@ def current_state():
 @cli.command()
 @click.argument('index', type=click.types.INT)
 @click.argument('value')
-def set_value(index, value):
+def modify_value(index, value):
     """Set a new settable or computed value into the system"""
     app_manager.modify_record(index, value)
 

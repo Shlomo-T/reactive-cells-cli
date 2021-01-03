@@ -1,5 +1,5 @@
-from data_manager import DataManager
-from parser import UserInputParser
+from cli_app.data_manager import DataManager
+from cli_app.parser import UserInputParser
 
 
 class AppManager(object):
